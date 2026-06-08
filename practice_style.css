@@ -1,0 +1,108 @@
+body{
+    background-color: black;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    background-image: url("images/bg.png");
+    background-size: cover;
+}
+#icon{
+    height:15vh;
+    width:8vw;
+    border: 2px solid rgb(9, 90, 9);
+    border-radius:50%;
+    box-shadow: 0px 0px 8px 5px rgb(126, 220, 126);
+    animation: spin 3s linear 0s infinite normal;
+}
+#out_circle{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+     height:25vh;
+    width:12vw;
+    border: 2px solid rgb(5, 63, 5);
+    border-radius:50%;
+    box-shadow: 0px 0px 6px 2px rgb(126, 220, 126);
+    gap: 10px;
+}
+#in_circle{ 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+     height:20vh;
+    width:10vw;
+    border: 2px solid rgb(5, 63, 5);
+    border-radius:50%;
+    box-shadow: 0px 0px 6px 3px rgb(126, 220, 126);
+    gap:10px;
+}
+#user_container{
+    display:flex;
+    flex-direction:column;
+    margin-top:30px;
+    height:25vw;
+    width:30vw;
+    border-radius:5px;
+    background-color:rgb(20, 20, 20); 
+    border-top: 3px solid rgb(6, 146, 48);
+}
+.operator{
+    display: block;
+    margin-top: 20px;
+    margin-left:20px;
+    white-space: normal;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color:white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input{
+    width: 23vw;
+    height: 5vh;
+    padding: 10px auto 10px auto;
+    margin-left:20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+#btn{
+    width:23vw;
+    margin:auto;
+    height:5vh;
+    border-radius: 5px;
+    background-color: rgb(29, 186, 81);
+    color:white;
+    font-size:15px;
+}
+@keyframes spin {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+#name{
+    height:40px;
+    width: 100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#bio{
+    color:green;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+}
+#pulse{
+     color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:30px;
+
+}
+
